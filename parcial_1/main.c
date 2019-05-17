@@ -35,9 +35,10 @@ int main()
 
     do
     {
-        utn_getUnsignedInt("\n\nORQUESTA: \n\t1) Agregar \n\t2) Eliminar \n\t3) Imprimir \nMUSICO: \n\t4) Agregar"
-        "\n\t5) Modificar\n\t6) Eliminar \n\t7) Imprimir\nINSTRUMENTO: \n\t8) Agregar \n\t9) Imprimir  \n\n10) SALIR\n"
-        "\nIngrese su opcion: ",
+        utn_getUnsignedInt("\n\nIngrese la opcion deseada:"
+        "\n\n   ORQUESTA: \n\t1) Agregar \n\t2) Eliminar \n\t3) Imprimir \n   MUSICO: \n\t4) Agregar"
+        "\n\t5) Modificar\n\t6) Eliminar \n\t7) Imprimir\n   INSTRUMENTO: \n\t8) Agregar \n\t9) Imprimir  \n\n   SALIR: 10\n"
+        "\nSu opcion: ",
         "\nError",1,sizeof(int),1,11,1,&opcion);
         switch(opcion)
         {
@@ -57,12 +58,14 @@ int main()
                 musico_alta(arrayMusico,QTY_ARRAY_MUSICO,&contadorIdMusico);
                 break;
 
-            case 5: //Eliminar
-                musico_baja(arrayMusico,QTY_ARRAY_MUSICO);
+            case 5: //Modificar
+                musico_listar(arrayMusico,QTY_ARRAY_MUSICO);
+                musico_modificar(arrayMusico,QTY_ARRAY_MUSICO);
+
                 break;
 
-            case 6: //Modificar
-                musico_modificar(arrayMusico,QTY_ARRAY_MUSICO);
+            case 6: //Eliminar
+                musico_baja(arrayMusico,QTY_ARRAY_MUSICO);
                 break;
 
             case 7://Listar
@@ -84,6 +87,6 @@ int main()
                 printf("\nOpcion no valida");
         }
     }
-    while(opcion!=6);
+    while(opcion!=10);
     return 0;
 }

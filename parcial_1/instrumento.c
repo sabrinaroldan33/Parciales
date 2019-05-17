@@ -189,7 +189,7 @@ int instrumento_baja(Instrumento array[], int sizeArray)
 * \return int Return (-1) si Error [largo no valido o NULL pointer o no encuentra elementos con el valor buscado] - (0) si se elimina el elemento exitosamente
 *
 */
-int instrumento_bajaValorRepetidoInt(Instrumento array[], int sizeArray, int valorBuscado) //cuando hay que dar de baja todas las posiciones en las que se encuentra ese int
+int instrumento_bajaValorRepetidoInt(Instrumento array[], int sizeArray, int valorBuscado)
 {
     int retorno=-1;
     int i;

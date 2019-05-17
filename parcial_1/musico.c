@@ -271,22 +271,16 @@ int musico_modificar(Musico array[], int sizeArray)
         {
             do
             {       //copiar printf de alta
-                printf("\nID: %d\nNombre: %s\nApellido: %s\nEdad: %d\nInstrumento: %d\n",
-                   array[posicion].idUnico,array[posicion].nombre,array[posicion].apellido,array[posicion].edad,array[posicion].instrumento);
-                utn_getChar("\n\nModificar: \n\tA: \n\tB: \n\tC: \n\tD: \n\tS: Salir","\nError",'A','Z',1,&opcion);
+                printf("\nID: %d\nEdad: %d\n",
+                   array[posicion].idUnico,array[posicion].edad);
+                utn_getChar("\n\nModificar: \n\tA: ID\n\tB: Edad\n\tS: Salir\n","\nError",'A','Z',1,&opcion);
                 switch(opcion)
                 {
                     case 'A':
-                        utn_getName("\n: ","\nError",1,MUSICO_SIZE,1,array[posicion].nombre);
+                        utn_getUnsignedInt("\n: ","\nError",1,sizeof(int),1,1,1,&array[posicion].idUnico);
                         break;
                     case 'B':
-                        utn_getTexto("\n: ","\nError",1,MUSICO_SIZE,1,array[posicion].apellido);
-                        break;
-                    case 'C':
-                        utn_getUnsignedInt("\n: ","\nError",1,sizeof(int),1,1,1,&array[posicion].edad);                     //mensaje + cambiar campo nombre
-                        break;
-                    case 'D':
-                        utn_getUnsignedInt("\n: ","\nError",1,sizeof(int),1,1,1,&array[posicion].instrumento);             //mensaje + cambiar campo apellido
+                        utn_getUnsignedInt("\n: ","\nError",1,sizeof(int),1,1,1,&array[posicion].edad);
                         break;
                     case 'S':
                         break;
@@ -329,7 +323,7 @@ int musico_listar(Musico array[], int size)
     return retorno;
 }
 
-void musico_mock(Musico arrayMusico[], int size,int *contadorIdmusico)                      //cambiar musico
+void musico_mock(Musico arrayMusico[], int size,int *contadorIdmusico)
 {
     //*******************************************************************
     arrayMusico[0].idUnico=0;
