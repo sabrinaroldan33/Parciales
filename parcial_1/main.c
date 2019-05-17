@@ -9,8 +9,6 @@
 #define QTY_ARRAY_ORQUESTA 50
 #define QTY_ARRAY_MUSICO 1000
 #define QTY_ARRAY_INSTRUMENTO 20
-#define SORT_UP 1
-#define SORT_DOWN 0
 
 int main()
 {
@@ -35,7 +33,7 @@ int main()
 
     do
     {
-        utn_getUnsignedInt("\n\nIngrese la opcion deseada:"
+        utn_getUnsignedInt("\nIngrese la opcion deseada:"
         "\n\n   ORQUESTA: \n\t1) Agregar \n\t2) Eliminar \n\t3) Imprimir \n   MUSICO: \n\t4) Agregar"
         "\n\t5) Modificar\n\t6) Eliminar \n\t7) Imprimir\n   INSTRUMENTO: \n\t8) Agregar \n\t9) Imprimir  \n\n   SALIR: 10\n"
         "\nSu opcion: ",

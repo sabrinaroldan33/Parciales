@@ -236,7 +236,7 @@ int musico_bajaValorRepetidoInt(Musico array[], int sizeArray, int valorBuscado)
             strcpy(array[i].apellido,"");
             array[i].edad=0;
             array[i].instrumento=0;                                                //cambiar campo apellido
-            retorno=0;                                              //cambiar campo apellido
+            retorno=0;
             }
         }
         retorno=0;

@@ -1,7 +1,7 @@
 #ifndef MUSICO_H_INCLUDED
 #define MUSICO_H_INCLUDED
 
-#define MUSICO_SIZE 51
+#define MUSICO_SIZE 50
 
 typedef struct
 {

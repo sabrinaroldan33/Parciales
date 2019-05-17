@@ -1,7 +1,7 @@
 #ifndef INSTRUMENTO_H_INCLUDED
 #define INSTRUMENTO_H_INCLUDED
 
-#define INSTRUMENTO_SIZE 20
+#define INSTRUMENTO_SIZE 50
 
 typedef struct
 {

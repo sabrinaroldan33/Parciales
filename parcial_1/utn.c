@@ -458,7 +458,7 @@ int utn_getTexto(char* msg, char* msgError, int minSize, int maxSize, int reinte
     {
         do
         {
-            if(!getString(msg,msgError,minSize,maxSize,&reintentos,bufferStr)) //==0 sin errores !0
+            if(!getString(msg,msgError,minSize,maxSize,&reintentos,bufferStr))
             {
                 if(isValidTexto(bufferStr)==1)
                 {
@@ -480,7 +480,7 @@ int utn_getTexto(char* msg, char* msgError, int minSize, int maxSize, int reinte
 
 int isValidTexto(char* stringRecibido)
 {
-    int retorno=1;  // para las funciones isValid arranco con verdadero y cambio cuando encuentro un error
+    int retorno=1;
     int i;
     for(i=0;stringRecibido[i]!='\0';i++)
     {

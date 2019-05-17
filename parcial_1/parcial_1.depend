@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1558051472 source:/home/alumno/Documentos/parcial_1/instrumento.c
+1558053160 source:/home/alumno/Documentos/parcial_1/instrumento.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -8,9 +8,9 @@
 
 1558043262 /home/alumno/Documentos/parcial_1/utn.h
 
-1558050626 /home/alumno/Documentos/parcial_1/instrumento.h
+1558053799 /home/alumno/Documentos/parcial_1/instrumento.h
 
-1558052851 source:/home/alumno/Documentos/parcial_1/main.c
+1558054056 source:/home/alumno/Documentos/parcial_1/main.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -21,7 +21,7 @@
 
 1558050455 /home/alumno/Documentos/parcial_1/orquesta.h
 
-1558050390 /home/alumno/Documentos/parcial_1/musico.h
+1558053805 /home/alumno/Documentos/parcial_1/musico.h
 
 1558053029 source:/home/alumno/Documentos/parcial_1/musico.c
 	<string.h>
