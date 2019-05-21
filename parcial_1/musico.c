@@ -342,7 +342,7 @@ int musico_listar(Musico array[], int size)
                         }
                     else
                         {
-                            printf("Tipo desconocido");
+                            printf("Tipo desconocido\n");
                         }
         }
         retorno=0;
