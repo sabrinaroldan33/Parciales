@@ -101,7 +101,7 @@ int main()
                     switch (opcionInforme)
                     {
                         case 'a':
-                            getString("\n\nIngrese el lugar de la orquesta a mostrar: ","\nError",
+                            utn_getTexto("\n\nIngrese el lugar de la orquesta a mostrar: ","\nError",
                             1,10,2,&lugar);
                             orquesta_buscarLugar(arrayOrquesta, sizeof(char), &lugar);
                             break;

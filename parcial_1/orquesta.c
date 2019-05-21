@@ -304,8 +304,8 @@ int orquesta_listar(Orquesta array[], int size)
         {
             if(array[i].isEmpty==1)
                 continue;
-
             else
+            {
                 printf("\n\tID: %d\n\tNombre: %s\n\tLugar: %s\n\tTipo: %d - ",
                    array[i].idUnico,array[i].nombre,array[i].lugar,array[i].tipo);
 
@@ -325,6 +325,7 @@ int orquesta_listar(Orquesta array[], int size)
                         {
                             printf("Tipo desconocido");
                         }
+                    }
 
         }
         retorno=0;
