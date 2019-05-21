@@ -423,6 +423,7 @@ int musico_listarInstrumento(Musico array[], int size)
             if(array[i].isEmpty==1)
                 continue;
             else if ((array[i].instrumento!=2) && (array[i].instrumento!=3) )
+                {
                 printf("\n\tID: %d\n\tNombre: %s\n\tApellido: %s\n\tEdad: %d\n\tInstrumento: %d - ",
                    array[i].idUnico,array[i].nombre,array[i].apellido,array[i].edad,array[i].instrumento);
 
@@ -446,6 +447,7 @@ int musico_listarInstrumento(Musico array[], int size)
                         {
                             printf("Tipo desconocido\n");
                         }
+                }
         }
         retorno=0;
     }
