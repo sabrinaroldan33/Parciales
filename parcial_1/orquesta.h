@@ -1,5 +1,6 @@
 #ifndef ORQUESTA_H_INCLUDED
 #define ORQUESTA_H_INCLUDED
+#include "musico.h"
 
 #define ORQUESTA_SIZE 50
 
@@ -23,8 +24,9 @@ int orquesta_buscarID(Orquesta array[], int size, int valorBuscado, int* posicio
 int orquesta_buscarInt(Orquesta array[], int size, int valorBuscado, int* posicion);
 int orquesta_buscarString(Orquesta array[], int size, char* valorBuscado, int* indice);
 int orquesta_alta(Orquesta array[], int size, int* contadorID);
-int orquesta_baja(Orquesta array[], int sizeArray);
+int orquesta_baja(Orquesta array[], int sizeArray, Musico arrayMusico[], int sizeMusico);
 int orquesta_bajaValorRepetidoInt(Orquesta array[], int sizeArray, int valorBuscado);
 int orquesta_ordenarPorDobleCriterio(Orquesta array[],int size, int orderFirst, int orderSecond);                                  //cambiar orquesta
 int orquesta_listar(Orquesta array[], int size);
 void orquesta_mock(Orquesta arrayOrquesta[], int size,int *contadorIdorquesta);
+int orquesta_buscarLugar(Orquesta array[], int size, char* valorBuscado);

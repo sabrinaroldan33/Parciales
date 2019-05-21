@@ -11,6 +11,7 @@ typedef struct
     char nombre[MUSICO_SIZE];
     char apellido[MUSICO_SIZE];
     int edad;
+    int idOrquesta;
     int instrumento;
 
 }Musico;
@@ -29,3 +30,5 @@ int musico_bajaValorRepetidoInt(Musico array[], int sizeArray, int valorBuscado)
 int musico_modificar(Musico array[], int sizeArray);
 int musico_listar(Musico array[], int size);
 void musico_mock(Musico arrayMusico[], int size,int *contadorIdmusico);
+int musico_listarEdad(Musico array[], int size);
+int musico_listarInstrumento(Musico array[], int size);

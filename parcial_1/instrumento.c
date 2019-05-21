@@ -164,10 +164,10 @@ int instrumento_baja(Instrumento array[], int sizeArray)
     int id;
     if(array!=NULL && sizeArray>0)
     {
-        utn_getUnsignedInt("\nID a cancelar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);          //cambiar si no se busca por ID
-        if(instrumento_buscarID(array,sizeArray,id,&posicion)==-1)                                   //cambiar si no se busca por ID
+        utn_getUnsignedInt("\nID a cancelar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);      
+        if(instrumento_buscarID(array,sizeArray,id,&posicion)==-1)                              
         {
-            printf("\nNo existe este ID");                                                          //cambiar si no se busca por ID
+            printf("\nNo existe este ID");                                                         
         }
         else
         {
