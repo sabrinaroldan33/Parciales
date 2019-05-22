@@ -336,27 +336,34 @@ int orquesta_listar(Orquesta array[], int size)
 void orquesta_mock(Orquesta arrayOrquesta[], int size,int *contadorIdorquesta)
 {
     //*******************************************************************
-    arrayOrquesta[0].idUnico=0;
-    arrayOrquesta[0].isEmpty=0;
-    strcpy(arrayOrquesta[0].nombre,"CCCCC");
-    strcpy(arrayOrquesta[0].lugar,"CCCCC");
-    arrayOrquesta[0].tipo=1;
-    contadorIdorquesta++;
 
     arrayOrquesta[1].idUnico=1;
     arrayOrquesta[1].isEmpty=0;
-    strcpy(arrayOrquesta[1].nombre,"AAAAA");
-    strcpy(arrayOrquesta[1].lugar,"AAAAA");
-    arrayOrquesta[1].tipo=2;
+    strcpy(arrayOrquesta[1].nombre,"Orquesta 1");
+    strcpy(arrayOrquesta[1].lugar,"Lugar 1");
+    arrayOrquesta[1].tipo=1;
     contadorIdorquesta++;
 
     arrayOrquesta[2].idUnico=2;
     arrayOrquesta[2].isEmpty=0;
-    strcpy(arrayOrquesta[2].nombre,"AAAAA");
-    strcpy(arrayOrquesta[2].lugar,"AAAAA");
-    arrayOrquesta[2].tipo=3;
+    strcpy(arrayOrquesta[2].nombre,"Orquesta 2");
+    strcpy(arrayOrquesta[2].lugar,"Lugar 1");
+    arrayOrquesta[2].tipo=2;
     contadorIdorquesta++;
 
+    arrayOrquesta[3].idUnico=3;
+    arrayOrquesta[3].isEmpty=0;
+    strcpy(arrayOrquesta[3].nombre,"Orquesta 3");
+    strcpy(arrayOrquesta[3].lugar,"Lugar 2");
+    arrayOrquesta[3].tipo=3;
+    contadorIdorquesta++;
+
+    arrayOrquesta[4].idUnico=4;
+    arrayOrquesta[4].isEmpty=0;
+    strcpy(arrayOrquesta[4].nombre,"Orquesta 4");
+    strcpy(arrayOrquesta[4].lugar,"Lugar 3");
+    arrayOrquesta[4].tipo=2;
+    contadorIdorquesta++;
 }
 
 int orquesta_buscarLugar(Orquesta array[], int size, char* valorBuscado)

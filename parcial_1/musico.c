@@ -352,43 +352,60 @@ int musico_listar(Musico array[], int size)
 
 void musico_mock(Musico arrayMusico[], int size,int *contadorIdmusico)
 {
-    //*******************************************************************
-    arrayMusico[0].idUnico=0;
-    arrayMusico[0].isEmpty=0;
-    strcpy(arrayMusico[0].nombre,"CCCCC");
-    strcpy(arrayMusico[0].apellido,"CCCCC");
-    arrayMusico[0].edad=0;
-    arrayMusico[0].idOrquesta=0;
-    arrayMusico[0].instrumento=0;
-    contadorIdmusico++;
-
+    //*****************************************************************
     arrayMusico[1].idUnico=1;
     arrayMusico[1].isEmpty=0;
-    strcpy(arrayMusico[1].nombre,"AAAAA");
-    strcpy(arrayMusico[1].apellido,"AAAAA");
-    arrayMusico[1].edad=0;
-    arrayMusico[1].idOrquesta=0;
-    arrayMusico[1].instrumento=1;
+    strcpy(arrayMusico[1].nombre,"Mus1");
+    strcpy(arrayMusico[1].apellido,"AMus1");
+    arrayMusico[1].edad=30;
+    arrayMusico[1].idOrquesta=1;
+    arrayMusico[1].instrumento=2;
     contadorIdmusico++;
 
     arrayMusico[2].idUnico=2;
     arrayMusico[2].isEmpty=0;
-    strcpy(arrayMusico[2].nombre,"AAAAA");
-    strcpy(arrayMusico[2].apellido,"AAAAA");
-    arrayMusico[2].edad=26;
-    arrayMusico[2].idOrquesta=0;
-    arrayMusico[2].instrumento=2;
+    strcpy(arrayMusico[2].nombre,"Mus2");
+    strcpy(arrayMusico[2].apellido,"AMus2");
+    arrayMusico[2].edad=20;
+    arrayMusico[2].idOrquesta=2;
+    arrayMusico[2].instrumento=5;
     contadorIdmusico++;
 
-     arrayMusico[3].idUnico=3;
+    arrayMusico[3].idUnico=3;
     arrayMusico[3].isEmpty=0;
-    strcpy(arrayMusico[3].nombre,"AAAAA");
-    strcpy(arrayMusico[3].apellido,"AAAAA");
-    arrayMusico[3].edad=26;
+    strcpy(arrayMusico[3].nombre,"Mus3");
+    strcpy(arrayMusico[3].apellido,"AMus3");
+    arrayMusico[3].edad=25;
     arrayMusico[3].idOrquesta=3;
-    arrayMusico[3].instrumento=3;
+    arrayMusico[3].instrumento=2;
     contadorIdmusico++;
 
+    arrayMusico[4].idUnico=4;
+    arrayMusico[4].isEmpty=0;
+    strcpy(arrayMusico[4].nombre,"Mus4");
+    strcpy(arrayMusico[4].apellido,"AMus4");
+    arrayMusico[4].edad=27;
+    arrayMusico[4].idOrquesta=4;
+    arrayMusico[4].instrumento=1;
+    contadorIdmusico++;
+
+    arrayMusico[5].idUnico=5;
+    arrayMusico[5].isEmpty=0;
+    strcpy(arrayMusico[5].nombre,"Mus5");
+    strcpy(arrayMusico[5].apellido,"AMus5");
+    arrayMusico[5].edad=22;
+    arrayMusico[5].idOrquesta=1;
+    arrayMusico[5].instrumento=3;
+    contadorIdmusico++;
+
+    arrayMusico[6].idUnico=6;
+    arrayMusico[6].isEmpty=0;
+    strcpy(arrayMusico[6].nombre,"Mus6");
+    strcpy(arrayMusico[6].apellido,"AMus6");
+    arrayMusico[6].edad=35;
+    arrayMusico[6].idOrquesta=3;
+    arrayMusico[6].instrumento=4;
+    contadorIdmusico++;
 }
 
 int musico_listarEdad(Musico array[], int size)

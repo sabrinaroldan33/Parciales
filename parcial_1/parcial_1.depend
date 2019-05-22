@@ -95,7 +95,7 @@
 	"orquesta.h"
 	"musico.h"
 
-1558474761 source:/home/alumno/Documentos/Sabrina/UTN/parcial_1/instrumento.c
+1558483095 source:/home/alumno/Documentos/Sabrina/UTN/parcial_1/instrumento.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -106,7 +106,7 @@
 
 1558474761 /home/alumno/Documentos/Sabrina/UTN/parcial_1/instrumento.h
 
-1558481832 source:/home/alumno/Documentos/Sabrina/UTN/parcial_1/musico.c
+1558483654 source:/home/alumno/Documentos/Sabrina/UTN/parcial_1/musico.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -115,7 +115,7 @@
 
 1558481172 /home/alumno/Documentos/Sabrina/UTN/parcial_1/musico.h
 
-1558480844 source:/home/alumno/Documentos/Sabrina/UTN/parcial_1/orquesta.c
+1558483265 source:/home/alumno/Documentos/Sabrina/UTN/parcial_1/orquesta.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -132,7 +132,7 @@
 	<string.h>
 	"utn.h"
 
-1558481460 source:/home/alumno/Documentos/Sabrina/UTN/parcial_1/main.c
+1558482516 source:/home/alumno/Documentos/Sabrina/UTN/parcial_1/main.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>

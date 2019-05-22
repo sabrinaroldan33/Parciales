@@ -164,10 +164,10 @@ int instrumento_baja(Instrumento array[], int sizeArray)
     int id;
     if(array!=NULL && sizeArray>0)
     {
-        utn_getUnsignedInt("\nID a cancelar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);      
-        if(instrumento_buscarID(array,sizeArray,id,&posicion)==-1)                              
+        utn_getUnsignedInt("\nID a cancelar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);
+        if(instrumento_buscarID(array,sizeArray,id,&posicion)==-1)
         {
-            printf("\nNo existe este ID");                                                         
+            printf("\nNo existe este ID");
         }
         else
         {
@@ -233,22 +233,33 @@ int instrumento_listar(Instrumento array[], int size)
 void instrumento_mock(Instrumento arrayInstrumento[], int size,int *contadorIdinstrumento)
 {
     //*******************************************************************
-    arrayInstrumento[0].idUnico=0;
-    arrayInstrumento[0].isEmpty=0;
-    strcpy(arrayInstrumento[0].nombre,"CCCCC");
-    strcpy(arrayInstrumento[0].tipo,"CCCCC");
-    contadorIdinstrumento++;
-
     arrayInstrumento[1].idUnico=1;
     arrayInstrumento[1].isEmpty=0;
-    strcpy(arrayInstrumento[1].nombre,"AAAAA");
-    strcpy(arrayInstrumento[1].tipo,"AAAAA");
+    strcpy(arrayInstrumento[1].nombre,"Inst 1");
+    strcpy(arrayInstrumento[1].tipo,"1");
     contadorIdinstrumento++;
 
     arrayInstrumento[2].idUnico=2;
     arrayInstrumento[2].isEmpty=0;
-    strcpy(arrayInstrumento[2].nombre,"AAAAA");
-    strcpy(arrayInstrumento[2].tipo,"AAAAA");
+    strcpy(arrayInstrumento[2].nombre,"Inst 2");
+    strcpy(arrayInstrumento[2].tipo,"2");
     contadorIdinstrumento++;
 
+    arrayInstrumento[3].idUnico=3;
+    arrayInstrumento[3].isEmpty=0;
+    strcpy(arrayInstrumento[3].nombre,"Inst 3");
+    strcpy(arrayInstrumento[3].tipo,"2");
+    contadorIdinstrumento++;
+
+    arrayInstrumento[4].idUnico=4;
+    arrayInstrumento[4].isEmpty=0;
+    strcpy(arrayInstrumento[4].nombre,"Inst 4");
+    strcpy(arrayInstrumento[4].tipo,"3");
+    contadorIdinstrumento++;
+
+     arrayInstrumento[5].idUnico=5;
+    arrayInstrumento[5].isEmpty=0;
+    strcpy(arrayInstrumento[5].nombre,"Inst 5");
+    strcpy(arrayInstrumento[5].tipo,"4");
+    contadorIdinstrumento++;
 }
